@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Infección SARS2-COVID19</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <center id="texto"> 
+        <h1>Simulación de contagio del SARS2-COV-2</h1> 
+        <p>Los círculos blancos son personas sanas, los rojos personas infectadas con el virus. ¿ Le gustaría ver cuán peligroso puede ser el SARS2-COV-2?</p>
+        <button  id="btn-play" onclick="playSimulacion()">COMENZAR</button> 
+    </center> 
+    <canvas id="background"></canvas>
+    <canvas id="game-over-canvas" style="display=none;" onclick="stopSimulacion()"></canvas>
+
+    <script src="js/soundmanager2.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
