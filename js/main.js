@@ -148,7 +148,7 @@ function alertaContagio() {
     start_sound.stop();
     alerta_sound = soundManager.createSound({
                      id: 'alerta',
-                     url: 'audio/alarma-de-evacuacin-evacuacion.mp3',
+                     url: 'audios/alarma-de-evacuacin-evacuacion.mp3',
                      volume: 100,
                       onfinish:function() { 
                          if(looped<loops){
@@ -172,7 +172,7 @@ function gameOver() {
     alerta_sound.stop();
     game_over_sound = soundManager.createSound({
                      id: 'game_over',
-                     url: 'audio/game-over.mp3',
+                     url: 'audios/game-over.mp3',
                      volume: 100,
                       onfinish:function() { 
                          if(looped<loops){
@@ -251,7 +251,7 @@ function playSimulacion(){
     texto.style.display = 'none';
 
     start_sound = soundManager.createSound({
-      url: 'audio/mariobros.mp3'
+      url: 'audios/mariobros.mp3'
     });  
 
     start_sound.play();
